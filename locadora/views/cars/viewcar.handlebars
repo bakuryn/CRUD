@@ -1,0 +1,15 @@
+<h2>Veículos Cadastrados</h2>
+<!--Array -->
+{{#each cars}}
+  <ul>
+    <li>
+
+      {{> cars}}
+      <!--Componente -->
+
+    </li>
+  </ul>
+{{/each}}
+<form action="/cars">
+    <button type="submit" class="btn btn-warning" id="button">Home</button>
+</form>

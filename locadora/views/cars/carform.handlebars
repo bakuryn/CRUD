@@ -1,0 +1,19 @@
+<h1>Adicionar veículo</h1>
+    <form action="/cars/add" method="post">
+        <div>
+            <input type="text" name="name" placeholder="Digite o nome" id="">
+            <input type="text" name="model" placeholder="Digite o modelo" id="">
+            <input type="text" name="motor" placeholder="Digite o motor" id="">
+            <input type="text" name="year" placeholder="Digite o ano" id="">
+            <input type="text" name="producer" placeholder="Digite o produtor" id="">
+            <input type="text" name="price" placeholder="Digite o preço" id="">
+            <input type="text" name="color" placeholder="Digite a cor" id="">
+            <input type="text" name="optional" placeholder="Digite os opcionais" id="">
+            <button type="submit" class="btn btn-warning" id="button">Cadastrar</button>
+        </div>
+    </form>
+<hr>
+
+<form action="/cars/allCars" method="get">
+    <button type="submit" class="btn btn-warning" id="button">Todos os veículos</button>
+</form>
