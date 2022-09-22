@@ -2,7 +2,7 @@ const { Sequelize } = require('sequelize')
 
 const sequelize = new Sequelize('locadora', 'root', '', {
     host:'localhost',
-    dialect: 'mysql'
+    dialect: 'mysql',
 })
 
 try {

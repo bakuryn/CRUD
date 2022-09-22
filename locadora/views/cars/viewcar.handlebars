@@ -1,15 +1,52 @@
-<h2>Veículos Cadastrados</h2>
-<!--Array -->
-{{#each cars}}
-  <ul>
-    <li>
+<h1>Todos os Veículos</h1>
 
-      {{> cars}}
-      <!--Componente -->
 
+
+<ul class="user_list list-group">
+  {{#each cars}}
+
+    <li class="list-group-item">
+      <div class="col-md-3">
+        <label for="">{{this.nome}}</label>
+      </div>
+      <div class="col-md-3">
+        <label for="">{{this.modedlo}}</label>
+      </div>
+      <div class="col-md-3">
+        <label for="">{{this.motor}}</label>
+      </div>
+      <div class="col-md-3">
+        <label for="">{{this.ano}}</label>
+      </div>
+      <div class="col-md-3">
+        <label for="">{{this.fabricante}}</label>
+      </div>
+      <div class="col-md-3">
+        <label for="">{{this.valor}}</label>
+      </div>
+      <div class="col-md-3">
+        <label for="">{{this.cor}}</label>
+      </div>
+      <div class="col-md-3">
+        <label for="">{{this.opcionais}}</label>
+      </div>
+
+      <div class="col-md-4 actions">
+        <a href="/cars/edit/{{this.id}}">
+          {{> edit_car}}
+        </a>
+        <form action="/cars/remove" method="post">
+          <input type="hidden" name="id" value="{{this.id}}">
+          <button type="submit">
+            {{> del_car}}
+          </button>
+        </form>
+      </div>
     </li>
-  </ul>
-{{/each}}
-<form action="/cars">
-    <button type="submit" class="btn btn-warning" id="button">Home</button>
-</form>
+
+  {{/each}}
+</ul>
+
+
+
+</div>
