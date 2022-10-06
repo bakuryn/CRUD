@@ -16,12 +16,23 @@
   </head>
 
   <body>
-    <nav id="navbar">
-      <ul>
-        <li><a href="/cars/allCars">Ver todos</a></li>
-        <li><a href="/cars/add">Novo Veículo</a></li>
-      </ul>
+    <nav class="navbar bg-light" id="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/cars/allCars">Ver todos os Veículos</a>
+        <a class="navbar-brand" href="/cars/add">Novo Veículo</a> 
+        <a class="navbar-brand" href="#">Consultar</a> 
+        <a class="navbar-brand" href="#">Serviços</a>
+        <a class="navbar-brand" href="#">Acompanhamento de Processos</a>
+        <a class="navbar-brand" href="#">Intenção de Venda</a>
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search">
+          {{!-- <button class="btn btn-outline-success" type="submit">Search</button> --}}
+        </form>
+      </div>
     </nav>
+    
+
     <div class="container">
       {{{body}}}
     </div>

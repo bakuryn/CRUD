@@ -1,71 +1,60 @@
-<h1>Edit Car {{car.nome}}</h1>
+<div class="title">
+    <h1>Editar Carro {{car.nome}}</h1>
+</div>
 
-<div class="back_view">
-  <form action="/cars/edit" method="post" class="row m-3">
+<div class="form-container">
+    <form action="/cars/edit" method="post">
+        <div class="row mb-3">
+            <input type="hidden" name="id" value="{{car.id}}" />
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Nome</label>
+            <div class="col-sm-10">
+            <input type="text" name="nome" value="{{car.nome}}" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Modelo</label>
+            <div class="col-sm-10">
+            <input type="text" name="modelo" value="{{car.modelo}}" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Motor</label>
+            <div class="col-sm-10">
+            <input type="text" name="motor" value="{{car.motor}}" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Ano</label>
+            <div class="col-sm-10">
+            <input type="text" name="ano" value="{{car.ano}}" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Fabricante</label>
+            <div class="col-sm-10">
+            <input type="text" name="fabricante" value="{{car.fabricante}}" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Preço</label>
+            <div class="col-sm-10">
+            <input type="text" name="valor" value="{{car.valor}}" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputEmail3" class="col-sm-2 col-form-label">Cor</label>
+            <div class="col-sm-10">
+            <input type="text" name="cor" value="{{car.cor}}" class="form-control" id="">
+            </div>
+        </div>
+        <div class="row mb-3">
+            <label for="inputPassword3" class="col-sm-2 col-form-label">Opcionais</label>
+            <div class="col-sm-10">
+            <input type="text" name="opcionais" value="{{car.opcionais}}" class="form-control" id="">
+            </div>
+        </div>
 
-    <div class="row align-items-start">
-      <input type="hidden" name="id" value="{{car.id}}" />
-      <div class="col-md-6">
-        <label for="nome" class="form-label">Nome:</label>
-        <input type="text" name="nome" value="{{car.nome}}" class="form-control" />
-      </div>
+        <button type="submit" class="btn btn-primary">Atualizar</button>
+    </form>
 
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-md-4">
-        <label for="modelo" class="form-label">Modelo:</label>
-        <input type="text" name="modelo" value="{{car.modelo}}" class="form-control" />
-      </div>
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-md-6">
-        <label for="motor" class="form-label">Motor:</label>
-        <input type="text" name="motor" value="{{car.motor}}" class="form-control" />
-      </div>
-
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-md-4">
-        <label for="ano" class="form-label">Ano:</label>
-        <input type="text" name="ano" value="{{car.ano}}" class="form-control" />
-      </div>
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-md-6">
-        <label for="fabricante" class="form-label">Fabricante:</label>
-        <input type="text" name="fabricante" value="{{car.fabricante}}" class="form-control" />
-      </div>
-
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-md-4">
-        <label for="valor" class="form-label">Valor:</label>
-        <input type="text" name="valor" value="{{car.valor}}" class="form-control" />
-      </div>
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-md-6">
-        <label for="cor" class="form-label">Cor:</label>
-        <input type="text" name="cor" value="{{car.cor}}" class="form-control" />
-      </div>
-
-    </div>
-
-    <div class="row align-items-start">
-      <div class="col-md-4">
-        <label for="opcionais" class="form-label">Opcionais:</label>
-        <input type="text" name="opcionais" value="{{car.opcionais}}" class="form-control" />
-      </div>
-    </div>
-
-
-
-    <div class="col-sm-2">
-      <input type="submit" value="Atualizar" />
-    </div>
+</div>

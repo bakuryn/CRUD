@@ -45,6 +45,15 @@
   margin-bottom: 1em;
 }
 
+.form-container {
+  display: flex;
+  justify-content: center;
+}
+
+.form-container form {
+  width: 40%;
+}
+
 .form-control label {
   font-weight: bold;
   margin-bottom: 0.3em;
@@ -110,4 +119,8 @@ li label{
   margin-top: 0px;
   margin-left: 20px;
 
+}
+
+.title{
+  text-align: center;
 }
