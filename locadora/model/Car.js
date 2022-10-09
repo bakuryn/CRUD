@@ -24,7 +24,7 @@ const Car = db.define('Car', {
         require: true
     },
     valor: {
-        type: DataTypes.DECIMAL,
+        type: DataTypes.DECIMAL(10,2),
         require: true
     },
     cor: {
